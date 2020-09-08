@@ -1,0 +1,1 @@
+var Pizza = prompt("wat is je favoriete pizza?")

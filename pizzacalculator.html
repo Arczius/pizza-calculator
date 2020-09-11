@@ -6,34 +6,70 @@
 <body>
 	<script>
 		
-		var spizza = prompt("Hoeveel kleine Pizza's wil je? deze kost €9");
-		var mpizza = prompt("Hoeveel medium Pizza's wil je? deze kost €11");
-		var lpizza = prompt("Hoeveel grote Pizza's wil je? deze kost €13");
+		//Damian Vaartmans
+		//99061149
+		//software development
 
+
+		//maakt variabele spizza aan en vraagt aan gebruiker hoeveel kleine pizza's hij/zij wilt
+		var spizza = prompt("Hoeveel kleine pizza's wil je? deze kost €9");
+		
+		//maakt variabele mpizza aan en vraagt aan gebruiker hoeveel medium pizza's hij/zij wilt
+		var mpizza = prompt("Hoeveel medium pizza's wil je? deze kost €11");
+		
+		//maakt variabele lpizza aan en vraagt aan gebruiker hoeveel grote pizza's hij/zij wilt
+		var lpizza = prompt("Hoeveel grote pizza's wil je? deze kost €13");
+
+		//maakt constante SPIZZAPRICE aan en geeft hem de waarde van 9, dit is de prijs voor de kleine pizza
 		const SPIZZAPRICE = 9;
+		
+		//maakt constante MPIZZAPRICE aan en geeft hem de waarde van 11, dit is de prijs voor de medium pizza
 		const MPIZZAPRICE = 11;
+		
+		//maakt constante LPIZZAPRICE aan en geeft hem de waarde van 13, dit is de prijs voor de grote pizza
 		const LPIZZAPRICE = 13;
 
+		//maakt variabele totals aan, berekent het totaal van spizza keer SPIZZAPRICE
 		var totals = spizza * SPIZZAPRICE;
+		
+		//maakt variabele totals aan, berekent het totaal van spizza keer SPIZZAPRICE
 		var totalm = mpizza * MPIZZAPRICE;
+		
+		//maakt variabele totalla aan, berekent het totaal van lpizza keer LPIZZAPRICE
 		var totalla = lpizza * LPIZZAPRICE;
 
+		//maakt variabele totalamount aan, dit is het totaal aantal pizza's de gebruiker heeft gebruikt
 		var totalamount = spizza + mpizza + lpizza;
+		
+		//maakt variabele totalprice aan, dit is de totaal prijs van wat de gebruiker heeft besteld
 		var totalprice = totals + totalm + totalla;
 
-		document.write("u heeft " + spizza + " kleine Pizza's die totaal €" + totals + " kosten");
+		//geeft voor de gebruiker weer hoeveel kleine pizza's hij/zij heeft besteld, en hoeveel dat kost
+		document.write("u heeft " + spizza + " kleine pizza's die totaal €" + totals + " kosten");
 
+		//zorgt ervoor dat de volgende regel code ook daadwerkelijk op de volgende regel wordt weergegeven
 		document.write("<br>");
 
-		document.write("u heeft " + mpizza + " medium Pizza's die totaal €" + totalm + " kosten");
+		//geeft voor de gebruiker weer hoeveel medium pizza's hij/zij heeft besteld, en hoeveel dat kost
+		document.write("u heeft " + mpizza + " medium pizza's die totaal €" + totalm + " kosten");
 
+		//zorgt ervoor dat de volgende regel code ook daadwerkelijk op de volgende regel wordt weergegeven
 		document.write("<br>")
 
-		document.write("u heeft " + lpizza + " medium Pizza's die totaal €" + totalla + " kosten");
+		//geeft voor de gebruiker weer hoeveel grote pizza's hij/zij heeft besteld, en hoeveel dat kost
+		document.write("u heeft " + lpizza + " grote pizza's die totaal €" + totalla + " kosten");
 
+		//zorgt ervoor dat de volgende regel code ook daadwerkelijk op de volgende regel wordt weergegeven
 		document.write("<br>")
 
-		document.write("u heeft totaal " + totalamount + "pizza's besteld, die kosten totaal €" + totalprice);
+		//geeft een regel met alleen maar lijntjes weer
+		document.write("---------------------------------------------------------")
+
+		//zorgt ervoor dat de volgende regel code ook daadwerkelijk op de volgende regel wordt weergegeven
+		document.write("<br>")
+
+		//geeft voor de gebruiker weer hoeveel het totaal kost
+		document.write( "deze kosten totaal €" + totalprice);
 
 	</script>
 </body>

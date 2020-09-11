@@ -4,6 +4,37 @@
 	<title>Pizza Calculator</title>
 </head>
 <body>
-	<script src="pizzacalculator.js"></script>
+	<script>
+		
+		var spizza = prompt("Hoeveel kleine Pizza's wil je? deze kost €9");
+		var mpizza = prompt("Hoeveel medium Pizza's wil je? deze kost €11");
+		var lpizza = prompt("Hoeveel grote Pizza's wil je? deze kost €13");
+
+		const SPIZZAPRICE = 9;
+		const MPIZZAPRICE = 11;
+		const LPIZZAPRICE = 13;
+
+		var totals = spizza * SPIZZAPRICE;
+		var totalm = mpizza * MPIZZAPRICE;
+		var totalla = lpizza * LPIZZAPRICE;
+
+		var totalamount = spizza + mpizza + lpizza;
+		var totalprice = totals + totalm + totalla;
+
+		document.write("u heeft " + spizza + " kleine Pizza's die totaal €" + totals + " kosten");
+
+		document.write("<br>");
+
+		document.write("u heeft " + mpizza + " medium Pizza's die totaal €" + totalm + " kosten");
+
+		document.write("<br>")
+
+		document.write("u heeft " + lpizza + " medium Pizza's die totaal €" + totalla + " kosten");
+
+		document.write("<br>")
+
+		document.write("u heeft totaal " + totalamount + "pizza's besteld, die kosten totaal €" + totalprice);
+
+	</script>
 </body>
 </html>
